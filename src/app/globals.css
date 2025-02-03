@@ -1,0 +1,323 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family:'cd-r';
+  src: url('./fonts/Satoshi-Regular.otf');
+}
+
+body {
+
+  background: var(--background);
+  font-family: 'cd-r' !important;
+  font-family: 16px;;
+}
+
+.menuValue:hover .menuItem{
+  visibility: visible;
+  height: auto;
+  z-index: 1;
+}
+
+.menuItem {
+  visibility: hidden;
+  height: 0px;
+  /* padding: 0px !important;
+  position:absolute;
+  right: -120px;
+  z-index:99;
+  top: 50px; */
+  background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+  .resp-col-md-3  .col-md-3{
+    width: 50%;
+  }
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.passion-anim {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  animation: marquee_marquee__1 10s linear infinite;
+  width: 4826px;
+}
+
+
+@keyframes marquee_marquee__1 {
+  0% {
+    transform: translateX(0px)
+  }
+
+  to {
+    transform: translateX(-2413px);
+  }
+}
+@media (max-width: 800px) {
+  .p-text {
+      text-align: center !important;
+  }
+  .header-text-para
+  {
+    padding-top: 10px;
+  }
+}
+
+.submenuDropdown:hover .submenuDropdownDiv{
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.menu-list:hover  .menu-item{
+  visibility: visible;
+}
+.menu-item{
+  visibility: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+  display: flex;
+  will-change: transform;
+  visibility: visible;
+  white-space: nowrap;
+}
+
+
+.marquee-anim {
+  animation: marquee-anim 10s linear infinite;
+}
+
+@keyframes marquee-anim {
+  0% {
+      transform: translateX(0)
+  }
+
+  to {
+      transform: translateX(-100vw)
+  }
+}
+
+
+.framer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+}
+
+.text-scroll {
+  margin-left: -30px; 
+  padding-top: 10px;
+  padding-bottom: 20px
+}
+
+.lineContainer {
+  position: relative;
+  height: 20rem; 
+  width: 2px;
+  overflow: hidden;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+.animatedLine {
+  position: absolute;
+  width: 100%;
+  height: 60%; 
+  background-color: white;
+  top: -60%; 
+}
+
+
+@media (max-width: 800px) {
+  .lineContainer {
+    position: relative;
+    height: 200px; 
+    width: 2px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .animatedLine {
+    position: absolute;
+    width: 100%;
+    height: 60%; 
+    background-color: white;
+    top: -60%; 
+  }
+}
+
+
+
+/* components/slider.css */
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-main-box,
+.slider-left-box,
+.slider-right-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.slider-main-box {
+  background-color: #f0f0f0;
+  z-index: 10;
+  opacity: 1;
+}
+
+.slider-left-box,
+.slider-right-box {
+  background-color: #e0e0e0;
+  opacity: 0.6;
+}
+
+.slider-left-box {
+  left: -40%;
+}
+
+.slider-right-box {
+  right: -40%;
+}
+
+.slider-button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.slider-btn {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.slider-indicator-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.slider-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-indicator.active {
+  background-color: #333;
+}
+/* Slider container styling */
+.slider-container {
+  position: relative;
+  padding: 2.5rem 0;
+  background-color: black;
+}
+
+/* Dots styling */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 0.5rem;
+}
+
+/* Non-active dots */
+.slick-dots span {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 2px solid gray; /* Gray border for non-active dots */
+  border-radius: 50%;
+  background-color: transparent; /* Transparent center */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Active dot */
+.slick-dots .slick-active span {
+  background-color: white; /* White-filled circle for active dots */
+  border-color: white; /* Ensure border is white for active */
+}
+
+/* Custom arrows */
+.custom-arrow {
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: white;
+}
+
+/* Image alignment inside the slider */
+.slick-slide img {
+  margin: 0 auto;
+  display: block;
+}

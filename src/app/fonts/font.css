@@ -1,0 +1,70 @@
+      
+  
+  @font-face {
+    font-family:'cd-r';
+    src: url('./Satoshi-Regular.otf');
+  }
+  @font-face {
+    font-family:'cd-se';
+    src: url('./Satoshi-Bold.otf');
+  }
+  @font-face {
+    font-family:'cd-m';
+    src: url('./Satoshi-Medium.otf');
+  }
+  @font-face {
+    font-family:'cd-b';
+    src: url('./Satoshi-Bold.otf');
+  }
+
+  /* @font-face {
+    font-family:'ff-Lgt';
+    src: url('./TTF/ClashDisplay-Variable.ttf');
+  }
+  @font-face {
+    font-family:'ff-Regular';
+    src: url('./WEB/fonts/ClashDisplay-Regular.ttf');
+  }
+  @font-face {
+    font-family:'ff-MD';
+    src: url('./WEB/fonts/ClashDisplay-Medium.ttf');
+  }
+  @font-face {
+    font-family:'ff-SB';
+    src: url('./WEB/fonts/ClashDisplay-Semibold.ttf');
+  }
+  @font-face {
+    font-family:'ff-BB';
+    src: url('./WEB/fonts/ClashDisplay-Bold.ttf');
+  }
+
+.ff-Regular{
+  font-family: 'ff-Regular';
+}
+.ff-MD{
+  font-family: 'ff-MD';
+}
+  .ff-Lgt{
+    font-family: 'ff-Lgt';
+  }
+ 
+  .ff-type{
+    font-family: 'ff-type';
+  }
+ 
+  .ff-type{
+    font-family: 'ff-type';
+  }
+ 
+ 
+  .ff-BB{
+    font-family: 'ff-BB';
+  }
+ 
+  .ff-SB{
+    font-family: 'ff-SB';
+  }
+  .ff-italic{
+    font-family: 'ff-italic';
+  }
+  */
