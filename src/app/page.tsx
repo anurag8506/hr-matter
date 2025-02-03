@@ -224,7 +224,7 @@ export default function Home() {
 
                     <div className="row align-items-stretch min-h-full bg-[#fff] p-0 m-0">
                         <div className="col-md-6  m-0 p-0" data-aos="fade-up"
-     data-aos-duration="2000">
+                            data-aos-duration="2000">
                             <div className="h-full">
                                 <Image
                                     src="/assets/pexels-edmond-dantes-4344860.jpg"
@@ -238,9 +238,9 @@ export default function Home() {
 
                         {/* Right Content Section - Ensures Both Sides Are Equal */}
                         <div className="col-md-6 bg-[#323f48]" data-aos="fade-up"
-     data-aos-duration="2000">
+                            data-aos-duration="2000">
                             <div className="col-md-8 flex-grow flex flex-col justify-center h-full">
-                                <div className="px-12 sm:p-[60px] p-[30px]">
+                                <div className="sm:p-[60px] sm:px-[20px] px-[20px] pt-4 pb-4">
                                     <p className="text-[#97d6e5] uppercase sm:text-[30px] sm:leading-[35px] text-[25px] leading-[30px]">
                                         Specialist Recruiters of HR Talent
                                     </p>
@@ -276,7 +276,7 @@ export default function Home() {
             <section className="overflow-hidden bg-[#fff] sm:px-20 px-6 pt-4 sm:py-[100px] py-[30px]">
                 <div className="container-fluid p-0">
                     <div className="flex justify-center" data-aos="fade-up"
-     data-aos-duration="2000">
+                        data-aos-duration="2000">
                         <div className="col-md-10 pt-5">
                             <div className="sm:flex align-items-center justify-between ">
                                 <p className="text-[#2d4e6b] uppercase text-[25px] ">Current Opportunities</p>
@@ -319,7 +319,7 @@ export default function Home() {
             </section>
 
             <section className="overflow-hidden bg-gradient-to-l from-[#fff] to-[#77FB38] sm:px-20 px-6 pt-4 sm:py-[100px] py-[30px]" data-aos="fade-up"
-     data-aos-duration="2000">
+                data-aos-duration="2000">
                 <div className="container-fluid p-0">
                     <div className="flex justify-center" >
                         <div className="col-md-10 pt-5">
@@ -374,7 +374,7 @@ export default function Home() {
                         <div className="col-md-10 pt-5">
 
                             <div className="row pt-4 align-items-stretch " data-aos="fade-up"
-     data-aos-duration="2000">
+                                data-aos-duration="2000">
                                 {/* Left Column with Image and Vertical Border */}
                                 <div className="col-md-6 mb-4 d-flex justify-between">
                                     <div className="col-md-8">
