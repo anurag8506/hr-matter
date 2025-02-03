@@ -48,7 +48,7 @@ const TestimonialSlider = () => {
     speed: 500,
     slidesToShow: 3, // Desktop (3 items)
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
     responsive: [

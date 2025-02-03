@@ -29,16 +29,16 @@ export default function Home() {
         <>
 
             <Header activePage="servicesPage" />
-            <section className="bg-[#000] overflow-hidden min-h-[100vh] pt-[100px]">
-                <div className="container-fluid p-0 min-h-[100vh]">
+            <section className="g-[#000] overflow-hidden sm:min-h-[100vh] sm:pt-[20px] pt-[50px]">
+                <div className="container-fluid p-0 sm:min-h-[100vh]">
                     <div className="relative sm:min-h-[100vh]">
                         <Image src='/assets/hrt2.png' alt='...' fill objectFit="cover" className="w-full sm:h-[100vh]  z-[0]" />
                         <div className="sm:px-20 px-6">
                             <div className="row align-items-center relative z-[1] pt-[100px] sm:bottom-[-140px] ">
                                 <div className="col-md-12 mb-4 ">
                                     <div className="col-md-7" >
-                                        <p className="text-[#ffff] font-[600] sm:text-[100px] text-[35px] sm:leading-[120px] leading-[40px] font-[cd-b] uppercase">Retained Campaigns</p>
-                                        <p className="font-[cd-r]  sm:text-[25px] text-[16px] text-[#C5C5C5] mb-4 pt-4 ">
+                                        <p className="text-[#ffff] font-[600] sm:text-[60px] text-[35px] sm:leading-[65px] leading-[40px] font-[cd-b] uppercase">Retained Campaigns</p>
+                                        <p className="font-[cd-r]  sm:text-[20px] text-[16px] text-[#C5C5C5] mb-4 pt-4 ">
                                             We believe in forging strong relationships. Part of that means providing bespoke solutions, to meet the complex needs of our clients
 
 
